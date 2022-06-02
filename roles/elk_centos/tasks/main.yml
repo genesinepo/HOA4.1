@@ -9,16 +9,16 @@
     dest: /etc/yum.repos.d/
 
 - name: Updating centos
-  dnf:
+  yum:
     update_cache: yes
 
 - name: Insatalling elasticsearch
-  dnf:
+  yum:
     name: elasticsearch
     state: present
 
 - name: Installing kibana
-  dnf:
+  yum:
     name: kibana
     state: present
 
@@ -28,7 +28,7 @@
     state: present
 
 - name: Installing logstash
-  dnf:
+  yum:
     name: logstash
     state: present
 

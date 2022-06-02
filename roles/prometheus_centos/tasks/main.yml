@@ -12,7 +12,7 @@
 
 - name: Install prometheus and config
   become: yes
-  dnf:
+  yum:
     name:
       - prometheus2
       - node_exporter
